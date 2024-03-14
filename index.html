@@ -8,24 +8,30 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="/img/Black and White Monochrome Tech Logo (7) (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
 </head>
 <body>
+
+  <!-- header -->
+
     <header>
         <section id="container">
             <img src="./img/Black and White Monochrome Tech Logo (7).png" alt="logo" id="logo">
-            <nav>
+            <nav id="container-nav">
                 <ul>
                     <li><a href="#" class="homenav">Home</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#login" class="login">Contato</a></li>
+                    <li><a href="#skills1">Skills</a></li>
+                    <li><a href="#skills2">Portfolio</a></li>
+                    <li><a href="#contato" class="login">Contato</a></li>
                 </ul>
             </nav>
         </section>
     </header>
+
+  <!-- home -->
 
     <section class="home">
         <div class="home-content">
@@ -44,52 +50,112 @@
         <div class="home-img">
           <img src="./img/Design sem nome (2).png" class="foto" alt="" srcset="">
         </div>
-      </section>
-      <footer>
-          <p>Transformando ideias em realidade. © Juan Figueiredo 2023 - Todos os Direitos Reservados.</p>
-        </footer>
+    </section>
 
-        <a href="https://web.whatsapp.com/send?phone=5571999621783" target="_blank" class="wpp">
-          <i class="fa fa-whatsapp"></i>
-        </a>
+  <br><br><br><br><br><br><br><br><br><br><br>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <hr>
-
-        <form method="post" action="https://6529a5b255b137ddc83f1046.mockapi.io/api/v1/user">
-        <div id='login' class="wrapper">
-              <h1>Contato</h1>
-
-              <div class='input-box'>
-                <input name='name' type="text" placeholder='Nome' required autocomplete="off">
-                <i class='bx bxs-user'></i>
-              </div>
-
-              <div class='input-box'>
-                <input name='email' type="email" placeholder='Email' required autocomplete="off">
-                <i class='bx bxs-contact' ></i>
-              </div>
-
-              <div class='input-box'>
-                <input name='number' type="number" class='number' placeholder='WhatsApp' required autocomplete="off">
-                <i class='bx bxs-phone' ></i>
-              </div>
-
-              <div class='input-box2'>
-                <input name='text' type="text" class='mensagem' placeholder='Digite sua mensagem' required autocomplete="off">
-              </div>
-              
-              <div class="remember-forgot">
-                <label><input type="checkbox">Enviar em anonimato</label>
-              </div>
-              <input name='enviar' type='submit' class='btn'></input>
-              <div class="register-link">
-                <p>Precisa de ajuda?
-                <a href="#" class="chat">Clique para abrir o chat!</a></p>
-              </div>
+  <!-- Especialidades -->
+<div class="cards">
+    <section id="skills1"class="especialidades">
+      <div class="interface">
+        <h2 class="title">MINHAS<span> ESPECIALIDADES.</span></h2>
+        <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-code-slash"></i>
+              <h3>Web sites responsivos</h3>
+              <p>Desenvolvimento de sites adaptáveis para garantir uma experiência em todos dispositivos.</p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-cart"></i>
+              <h3>Loja online</h3>
+              <p>Criação de lojas virtuais com gerenciamento de produtos, pedidos e pagamentos online.</p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-wordpress"></i>
+              <h3>Blogs</h3>
+              <p>Desenvolvimento de blogs personalizados com layout atrativo e interação com os leitores.</p>
+            </div>
         </div>
-        </form>
-</body>
+      </div>
+    </section>
 
+    <br><br><br><br><br><br><br><br>
+
+    <section id="skills2"class="especialidades">
+      <div class="interface">
+        <h2 class="title2">MINHAS<span> HABILIDADES.</span></h2>
+        <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-filetype-js"></i>
+              <h3>JavaScript</h3>
+              <p>2 anos de experiência sólida em JavaScript, com histórico comprovado de projetos otimizados e atualizados.</p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-filetype-jsx"></i>
+              <h3>React</h3>
+              <p>Experiência em dev web utilizando React em meus projetos pessoais, entregando códigos de alta qualidade.</p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-filetype-tsx"></i>
+              <h3>TypeScript</h3>
+              <p>Experiência com TypeScript em projetos pessoais, fornecendo soluções profissionais de qualidade.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+</div>
+<br><br><br><br><br><br><br><br><br>
+  
+  <!-- form de contato -->
+
+    <h2 class="title3">ENTRE EM<span> CONTATO.</span></h2>
+    
+    <form method="post" action="https://6529a5b255b137ddc83f1046.mockapi.io/api/v1/user">
+      <div id='contato' class="wrapper">
+        <h1>Contato</h1>
+        
+        <div class='input-box'>
+          <input name='name' type="text" placeholder='Nome' required autocomplete="off">
+          <i class='bx bxs-user'></i>
+        </div>
+        
+        <div class='input-box'>
+          <input name='email' type="email" placeholder='Email' required autocomplete="off">
+          <i class='bx bxs-contact' ></i>
+        </div>
+        
+        <div class='input-box'>
+          <input name='number' type="number" class='number' placeholder='WhatsApp' required autocomplete="off">
+          <i class='bx bxs-phone' ></i>
+        </div>
+        
+        <div class='input-box2'>
+          <input name='text' type="text" class='mensagem' placeholder='Digite sua mensagem' required autocomplete="off">
+        </div>
+        
+        <div class="remember-forgot">
+          <label><input type="checkbox">Enviar em anonimato</label>
+        </div>
+        <input name='enviar' type='submit' class='btn'></input>
+        <div class="register-link">
+          <p>Precisa de ajuda?
+            <a href="#" class="chat">Clique para abrir o chat!</a></p>
+          </div>
+        </div>
+    </form>
+
+      <!-- footer -->
+
+    <footer>
+          <p>Transformando ideias em realidade. © Juan Figueiredo 2023 - Todos os Direitos Reservados.</p>
+    </footer>
+
+      <!-- wpp buton -->
+
+    <a href="https://web.whatsapp.com/send?phone=5571999621783" target="_blank" class="wpp">
+          <i class="fa fa-whatsapp"></i>
+    </a>
+        
+    </body>
+      
 </html>
